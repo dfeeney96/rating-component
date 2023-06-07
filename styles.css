@@ -66,14 +66,16 @@ button:hover {
     height: 40px;
 }
 
-.rating .score:hover {
+.rating .score:hover,
+#selected{
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
 
 
 
-.rating .submit {
+.rating .submit,
+.error button {
     background-color: hsl(25, 97%, 53%);
     border-radius: 30px;
     color: hsl(0, 0%, 100%);
@@ -85,11 +87,13 @@ button:hover {
     margin: 0 auto;
 }
 
-.rating .submit:hover {
+.rating .submit:hover,
+.error button:hover{
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
     
 }
+
 
 .thankyou {
     display: none;
@@ -114,6 +118,22 @@ button:hover {
     padding: 10px 20px;
 }
 
+.error {
+    display: none;
+}
+
+.error h1 {
+    margin-bottom: 10px;
+}
+
+.error h2 {
+    margin-bottom: 10px;
+}
+
+.error p {
+    margin-bottom: 50px;
+}
+
 
 .attribution {
     color: hsl(0, 0%, 100%);
@@ -129,6 +149,18 @@ button:hover {
     display: none;
 }
 
+
 .submission-received {
     display: flex;
 }
+
+.no-score {
+    display: block;
+}
+
+#prior-score {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+
+}
+
